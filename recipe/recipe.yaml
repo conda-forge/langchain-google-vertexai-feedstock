@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.2.5"
+  version: "3.3.0"
 
 package:
   name: langchain-google-vertexai
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/langchain-google-vertexai/langchain_google_vertexai-${{ version }}.tar.gz
-  sha256: 0a4b267aceefbaf8622bb47a13bffd8b2f93e2f2b9e298a91305592e88f33531
+  sha256: 0b4a8c5cb896af022d43020503849f24c7d19752aec33481a8edeee3e18a1b23
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - langchain-core >=1.4.7,<2.0.0
+    - langchain-core >=1.8.0,<2.0.0
     - google-cloud-aiplatform >=1.97.0
     - google-cloud-storage >=2.18.0
     - httpx >=0.28.0
